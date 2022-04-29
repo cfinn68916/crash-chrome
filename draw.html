@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <canvas width="500px" height="500px"></canvas>
+        <script>
+            onload=function(){
+                var c=document.querySelector('canvas');
+                var ctx = c.getContext("2d");
+                ctx.moveTo(100, 100);
+                ctx.lineTo(110, 100);
+                ctx.stroke();
+                
+                for(var i=0;i+=1;i<100){
+                    ctx.moveTo(200, i);
+                    ctx.lineTo(210, i);
+                    ctx.stroke();
+                }
+            }
+        </script>
+    </body>
+</html>
